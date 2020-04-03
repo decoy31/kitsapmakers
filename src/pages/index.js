@@ -2,7 +2,6 @@ import React from "react";
 import SettingsIcon from "@material-ui/icons/Settings";
 
 // Styles
-import globalStyles from "../styles/global.css";
 import indexStyles from "./index.module.css";
 
 export default function index() {
