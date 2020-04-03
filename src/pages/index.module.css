@@ -6,6 +6,23 @@
 	height: 100vh;
 }
 
+.gearIcon {
+	height: 50px !important;
+	width: 50px !important;
+	fill: #a5a5a5 !important;
+	animation: spin 4s infinite linear;
+	margin-bottom: 0.5rem;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
 .title,
 .subtitle {
 	text-align: center;
