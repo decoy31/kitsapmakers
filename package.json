@@ -1,23 +1,39 @@
 {
-  "name": "kitsapmakers",
-  "version": "0.0.2",
-  "description": "Website code for KitsapMakers.org",
-  "main": "index.js",
+  "name": "gatsby-starter-hello-world",
+  "private": true,
+  "description": "A simplified bare-bones starter for Gatsby",
+  "version": "0.1.0",
+  "license": "MIT",
   "scripts": {
-    "test": "npm run test"
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.9.8",
+    "@material-ui/icons": "^4.9.1",
+    "gatsby": "^2.19.45",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/decoy31/kitsapmakers.git"
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
   },
-  "author": "Tim Duffey <duffeyt@gmail.com>",
-  "license": "SEE LICENSE IN LICENCE",
   "bugs": {
-    "url": "https://github.com/decoy31/kitsapmakers/issues"
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
-  "homepage": "https://github.com/decoy31/kitsapmakers#readme",
-  "dependencies": {
-    "@material-ui/core": "^4.9.8",
-    "@material-ui/icons": "^4.9.1"
+  "prettier": {
+    "useTabs": true,
+    "tabWidth": 4,
+    "trailingComma": "es5",
+    "semi": true
   }
 }

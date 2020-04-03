@@ -5,7 +5,6 @@
 		}
 	],
 	"settings": {
-		"html.format.indentInnerHtml": true,
-		"prettier.useTabs": true
+		"html.format.indentInnerHtml": true
 	}
 }
