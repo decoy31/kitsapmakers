@@ -4,6 +4,13 @@
 	align-items: center;
 	flex-flow: column;
 	height: 100vh;
+	padding: 0 1rem;
+	background: rgb(255, 255, 255);
+	background: radial-gradient(
+		circle,
+		rgba(255, 255, 255, 1) 0%,
+		rgba(245, 245, 245, 1) 100%
+	);
 }
 
 .gearIcon {
