@@ -1,0 +1,19 @@
+{
+  "name": "kitsapmakers",
+  "version": "0.0.2",
+  "description": "Website code for KitsapMakers.org",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/decoy31/kitsapmakers.git"
+  },
+  "author": "Tim Duffey <duffeyt@gmail.com>",
+  "license": "SEE LICENSE IN LICENCE",
+  "bugs": {
+    "url": "https://github.com/decoy31/kitsapmakers/issues"
+  },
+  "homepage": "https://github.com/decoy31/kitsapmakers#readme"
+}
