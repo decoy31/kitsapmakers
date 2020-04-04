@@ -16,7 +16,7 @@ export default function index() {
 				</a>{" "}
 				for more information.
 			</p>
-			<p>
+			<p className={indexStyles.subtitle}>
 				To support our volunteer COVID-19 efforts, visit our{" "}
 				<a href="https://www.gofundme.com/f/kitsap-county-ppe-support-fund">
 					GoFundMe
