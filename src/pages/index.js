@@ -39,7 +39,7 @@ export default function index() {
 							component="p"
 							variant="subtitle1">
 							Bringing together the 3D Maker community in Kitsap
-							County and beyond.
+							County.
 						</Typography>
 					</Grid>
 					<Grid
