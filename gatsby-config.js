@@ -5,5 +5,8 @@
  */
 
 module.exports = {
-  /* Your site config here */
-}
+	siteMetadata: {
+		title: 'Kitsap Makers',
+	},
+	plugins: [`gatsby-plugin-react-helmet`],
+};

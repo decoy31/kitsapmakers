@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
 // Components
+import Helmet from 'react-helmet';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
@@ -30,18 +31,20 @@ export default function Covid19Page() {
 
 	return (
 		<div className={Covid19PageStyles.hero}>
+			<Helmet>
+				<title>Kitsap Makers - COVID-19 Response</title>
+			</Helmet>
 			<Container>
 				<Grid
 					container
 					justify="center"
 					alignItems="flex-start"
-					spacing={5}
-				>
+					spacing={5}>
 					<Grid item className={classes.hero} xs={12}>
 						<Typography component="h1" variant="h2">
 							COVID-19 Response
 						</Typography>
-						<Typography component="p">
+						<Typography component="p" variant="subtitle1">
 							How may Kitsap Makers help your organization through
 							this crisis?
 						</Typography>
@@ -52,8 +55,7 @@ export default function Covid19Page() {
 								<Typography
 									className={classes.cardTitle}
 									component="h2"
-									variant="h5"
-								>
+									variant="h5">
 									In Need of PPE?
 								</Typography>
 								<Typography component="p">
@@ -75,14 +77,14 @@ export default function Covid19Page() {
 								<Typography
 									className={classes.cardTitle}
 									component="h2"
-									variant="h5"
-								>
+									variant="h5">
 									Donate
 								</Typography>
 								<Typography component="p">
 									We are a volunteer group of passionate 3D
 									makers doing our best to help our local
-									community.
+									community. 100% of the funds go to the
+									production and distribution of PPE.
 								</Typography>
 							</CardContent>
 							<CardActions>
@@ -91,9 +93,8 @@ export default function Covid19Page() {
 									color="secondary"
 									endIcon={<OpenInNewIcon />}
 									href="https://www.gofundme.com/f/kitsap-county-ppe-support-fund"
-									target="_blank"
-								>
-									Donate
+									target="_blank">
+									GoFundMe
 								</Button>
 							</CardActions>
 						</Card>

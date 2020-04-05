@@ -164,6 +164,55 @@ h5 {
 	margin-bottom: 1rem;
 }
 
+/* #region Header */
+
+.Header {
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0 1rem;
+	height: 3rem;
+	background-color: white;
+}
+
+.Header a,
+.Header a:visited,
+.Header a:active,
+.Header a:focus {
+	color: #333333;
+	text-decoration: none;
+}
+
+.Header .logo-container {
+	display: inline-block;
+	font-weight: 600;
+}
+
+.Header .logo {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.Header .logo > svg {
+	fill: #a5a5a5 !important;
+	margin-right: 0.3rem;
+}
+
+.Header > ul {
+	list-style: none;
+}
+
+.Header > ul > li {
+	display: inline-block;
+}
+
+/* #endregion Header */
+
 .km-gray,
 .km-gray a {
 	color: #a5a5a5;
