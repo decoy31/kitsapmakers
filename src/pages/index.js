@@ -2,21 +2,44 @@ import React from 'react';
 
 // Components
 import Helmet from 'react-helmet';
-
-// Icons
-import SettingsIcon from '@material-ui/icons/Settings';
+import Container from '@material-ui/core/Container';
+import Grid from '@material-ui/core/Grid';
+import Typography from '@material-ui/core/Typography';
 
 // Styles
 import indexStyles from './index.module.css';
 
 export default function index() {
 	return (
-		<div className={indexStyles.container}>
+		<div className={indexStyles.root}>
 			<Helmet>
 				<title>Kitsap Makers</title>
 			</Helmet>
-			<SettingsIcon className={indexStyles.gearIcon} />
-			<h1 className={indexStyles.title}>Kitsap Makers</h1>
+			<Container>
+				<Grid
+					className={indexStyles.hero}
+					container
+					justify="center"
+					alignItems="center"
+					spacing={1}>
+					<Grid item xs={12}>
+						<Typography
+							className={indexStyles.title}
+							component="h1"
+							variant="h2">
+							Kitsap Makers
+						</Typography>
+						<Typography
+							className={indexStyles.subtitle}
+							component="p"
+							variant="subtitle1">
+							Bringing together the 3D Maker community in Kitsap
+							County and beyond.
+						</Typography>
+					</Grid>
+				</Grid>
+			</Container>
+			{/* <h1>Kitsap Makers</h1>
 			<p className={indexStyles.subtitle}>
 				This site is a work in progress. Please visit our{' '}
 				<a href="https://www.facebook.com/groups/818404345305725/">
@@ -30,7 +53,7 @@ export default function index() {
 					GoFundMe
 				</a>
 				.
-			</p>
+			</p> */}
 		</div>
 	);
 }

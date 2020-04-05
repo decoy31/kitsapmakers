@@ -1,10 +1,4 @@
-.container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: column;
-	height: calc(100vh - 3rem); /* Account for the Header */
-	padding: 0 1rem;
+.root {
 	background: rgb(255, 255, 255);
 	background: radial-gradient(
 		circle,
@@ -13,21 +7,8 @@
 	);
 }
 
-.gearIcon {
-	height: 50px !important;
-	width: 50px !important;
-	fill: #a5a5a5 !important;
-	animation: spin 4s infinite linear;
-	margin-bottom: 0.5rem;
-}
-
-@keyframes spin {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
+.hero {
+	height: calc(70vh - 3rem); /* Account for the Header */
 }
 
 .title,
