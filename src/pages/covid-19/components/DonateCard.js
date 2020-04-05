@@ -15,6 +15,9 @@ import MailIcon from '@material-ui/icons/Mail';
 import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 import MoneyIcon from '@material-ui/icons/AttachMoney';
 
+// Images
+import MontanaMaskImage from './montana-mask-render.jpg';
+
 const useStyles = makeStyles(theme => ({
 	cardTitle: {
 		marginBottom: '1rem',
@@ -35,7 +38,7 @@ export default function DonateCard() {
 				component="img"
 				alt="Montana n95 Mask"
 				height="300"
-				image="./montana-mask-render.jpg"
+				image={MontanaMaskImage}
 			/>
 			<CardContent>
 				<Typography

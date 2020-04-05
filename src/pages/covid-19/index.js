@@ -17,6 +17,9 @@ import Typography from '@material-ui/core/Typography';
 // Icons
 import MailIcon from '@material-ui/icons/Mail';
 
+// Images
+import FaceShieldPeepsImage from './face-shield-peeps.jpg';
+
 // Styles
 import Covid19PageStyles from './index.module.css';
 
@@ -63,7 +66,7 @@ export default function Covid19Page() {
 								component="img"
 								alt="Health professionals wearing face shields"
 								height="300"
-								image="./face-shield-peeps.jpg"
+								image={FaceShieldPeepsImage}
 							/>
 							<CardContent>
 								<Typography
