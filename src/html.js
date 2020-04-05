@@ -6,10 +6,6 @@ export default function HTML(props) {
 		<html {...props.htmlAttributes}>
 			<head>
 				<title>Kitsap Makers</title>
-				<meta
-					name="description"
-					content="An organization dedicated to bringing together the 3D makers in Kitsap County."
-				/>
 				<meta charSet="utf-8" />
 				<meta httpEquiv="x-ua-compatible" content="ie=edge" />
 				<meta
@@ -30,8 +26,7 @@ export default function HTML(props) {
 				<script
 					src="https://unpkg.com/@material-ui/core@4.4.0/umd/material-ui.production.min.js"
 					crossOrigin="anonymous"
-					async
-				></script>
+					async></script>
 			</head>
 			<body {...props.bodyAttributes}>
 				{props.preBodyComponents}

@@ -32,6 +32,11 @@ export default function Covid19Page() {
 		<div className={Covid19PageStyles.hero}>
 			<Helmet>
 				<title>Kitsap Makers - COVID-19 Effort</title>
+				<meta
+					name="description"
+					content="A group of volunteers from Kitsap Makers is 3D
+							printing various PPE to support the fight against COVID-19."
+				/>
 			</Helmet>
 			<Container>
 				<Grid

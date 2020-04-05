@@ -20,6 +20,10 @@ export default function index() {
 		<div className={indexStyles.root}>
 			<Helmet>
 				<title>Kitsap Makers</title>
+				<meta
+					name="description"
+					content="An organization dedicated to bringing together the 3D makers in Kitsap County."
+				/>
 			</Helmet>
 			<Container className={indexStyles.hero}>
 				<Grid
