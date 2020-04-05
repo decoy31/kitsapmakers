@@ -1,5 +1,4 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 
 // Components
 import Card from '@material-ui/core/Card';
@@ -18,11 +17,8 @@ import MoneyIcon from '@material-ui/icons/AttachMoney';
 // Images
 import MontanaMaskImage from './montana-mask-render.jpg';
 
-const useStyles = makeStyles(theme => ({
-	cardTitle: {
-		marginBottom: '1rem',
-	},
-}));
+// Styles
+import DonateCardStyles from './DonateCard.module.css';
 
 const emailSubject = 'Request to Join the COVID-19 Effort';
 const emailBody =
@@ -30,8 +26,6 @@ const emailBody =
 const emailOfferHelpHref = `mailto:${constants.contactEmailAddress}?subject=${emailSubject}&body=${emailBody}`;
 
 export default function DonateCard() {
-	const classes = useStyles();
-
 	return (
 		<Card variant="outlined">
 			<CardMedia
@@ -42,7 +36,7 @@ export default function DonateCard() {
 			/>
 			<CardContent>
 				<Typography
-					className={classes.cardTitle}
+					className={DonateCardStyles.cardTitle}
 					component="h2"
 					variant="h5">
 					Support the Effort

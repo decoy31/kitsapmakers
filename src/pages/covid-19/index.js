@@ -1,5 +1,4 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import constants from '../../constants';
 
 // Components
@@ -23,23 +22,12 @@ import FaceShieldPeepsImage from './face-shield-peeps.jpg';
 // Styles
 import Covid19PageStyles from './index.module.css';
 
-const useStyles = makeStyles(theme => ({
-	hero: {
-		textAlign: 'center',
-	},
-	cardTitle: {
-		marginBottom: '1rem',
-	},
-}));
-
 const emailSubject = 'Request for PPE';
 const emailBody =
 	'Please provide your name, which organization is need of the PPE, contact information in the organization who deals with PPE, and which PPE needed and the quantity.';
 const emailForPPEHref = `mailto:${constants.contactEmailAddress}?subject=${emailSubject}&body=${emailBody}`;
 
 export default function Covid19Page() {
-	const classes = useStyles();
-
 	return (
 		<div className={Covid19PageStyles.hero}>
 			<Helmet>
@@ -51,7 +39,10 @@ export default function Covid19Page() {
 					justify="center"
 					alignItems="flex-start"
 					spacing={5}>
-					<Grid item className={classes.hero} xs={12}>
+					<Grid
+						item
+						className={Covid19PageStyles.heroContent}
+						xs={12}>
 						<Typography component="h1" variant="h2">
 							COVID-19 Effort
 						</Typography>
@@ -70,7 +61,7 @@ export default function Covid19Page() {
 							/>
 							<CardContent>
 								<Typography
-									className={classes.cardTitle}
+									className={Covid19PageStyles.cardTitle}
 									component="h2"
 									variant="h5">
 									Need PPE?
