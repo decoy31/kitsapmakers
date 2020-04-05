@@ -5,6 +5,12 @@ import Helmet from 'react-helmet';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
+
+// Icons
+import FacebookIcon from '@material-ui/icons/Facebook';
+import LocalHospitalIcon from '@material-ui/icons/LocalHospital';
+import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 
 // Styles
 import indexStyles from './index.module.css';
@@ -15,13 +21,12 @@ export default function index() {
 			<Helmet>
 				<title>Kitsap Makers</title>
 			</Helmet>
-			<Container>
+			<Container className={indexStyles.hero}>
 				<Grid
-					className={indexStyles.hero}
 					container
 					justify="center"
 					alignItems="center"
-					spacing={1}>
+					spacing={5}>
 					<Grid item xs={12}>
 						<Typography
 							className={indexStyles.title}
@@ -37,23 +42,47 @@ export default function index() {
 							County and beyond.
 						</Typography>
 					</Grid>
+					<Grid
+						className={indexStyles.buttonContainer}
+						item
+						container
+						justify="center"
+						align-items="center"
+						spacing={2}>
+						<Grid
+							className={indexStyles.primaryButtonContainer}
+							item
+							xs={12}
+							sm={6}>
+							<Button
+								className={indexStyles.primaryButton}
+								variant="contained"
+								color="primary"
+								href="https://www.facebook.com/groups/818404345305725/"
+								target="_blank"
+								rel="noopener"
+								startIcon={<FacebookIcon />}
+								endIcon={<OpenInNewIcon />}>
+								Facebook Group
+							</Button>
+						</Grid>
+						<Grid
+							className={indexStyles.secondaryButtonContainer}
+							item
+							xs={12}
+							sm={6}>
+							<Button
+								className={indexStyles.secondaryButton}
+								variant="contained"
+								color="secondary"
+								href="/covid-19"
+								startIcon={<LocalHospitalIcon />}>
+								COVID-19 Effort
+							</Button>
+						</Grid>
+					</Grid>
 				</Grid>
 			</Container>
-			{/* <h1>Kitsap Makers</h1>
-			<p className={indexStyles.subtitle}>
-				This site is a work in progress. Please visit our{' '}
-				<a href="https://www.facebook.com/groups/818404345305725/">
-					Facebook group page
-				</a>{' '}
-				for more information.
-			</p>
-			<p className={indexStyles.subtitle}>
-				To support our volunteer COVID-19 efforts, visit our{' '}
-				<a href="https://www.gofundme.com/f/kitsap-county-ppe-support-fund">
-					GoFundMe
-				</a>
-				.
-			</p> */}
 		</div>
 	);
 }
