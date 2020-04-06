@@ -15,7 +15,7 @@
 
 @media (min-width: 600px) {
 	.hero {
-		min-height: 80vh;
+		padding: 3rem 0;
 	}
 }
 
