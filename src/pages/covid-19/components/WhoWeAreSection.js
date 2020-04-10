@@ -35,12 +35,12 @@ export default function OurNeedsSection() {
 							consulting on the project. If you're in Kitsap
 							County and want more resources and updates, check
 							out{' '}
-							<Link
-								to="https://kitsappublichealth.org/"
+							<a
+								href="https://kitsappublichealth.org/"
 								target="_blank"
 								rel="noopener">
 								Kitsap Public Health
-							</Link>
+							</a>
 							.
 						</Typography>
 					</Grid>
