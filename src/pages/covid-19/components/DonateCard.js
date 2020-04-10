@@ -15,7 +15,7 @@ import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 import MoneyIcon from '@material-ui/icons/AttachMoney';
 
 // Images
-import MontanaMaskImage from './images/montana-mask-render.jpg';
+import MontanaMaskImage from './images/face-shield-pattern.jpg';
 
 // Styles
 import DonateCardStyles from './DonateCard.module.css';
