@@ -42,8 +42,8 @@ export default function NeedPPECard() {
 				<Typography component="p">
 					Are you a member of a health or first responder organization
 					in need of personal protection equipment (PPE)? We are
-					currently producing: face shields, N95 masks, and ear band
-					holders.
+					currently producing: face shields and ear-saver band holder
+					clips.
 				</Typography>
 			</CardContent>
 			<CardActions>
