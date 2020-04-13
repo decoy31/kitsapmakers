@@ -7,10 +7,8 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import constants from '../../../constants';
 
 // Icons
-import MailIcon from '@material-ui/icons/Mail';
 import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 import MoneyIcon from '@material-ui/icons/AttachMoney';
 
@@ -19,11 +17,6 @@ import MontanaMaskImage from './images/face-shield-pattern.jpg';
 
 // Styles
 import DonateCardStyles from './DonateCard.module.css';
-
-const emailSubject = 'Request to Join the COVID-19 Effort';
-const emailBody =
-	'Please provide your name, contact information, and in what capacity you would like to offer your assistance to the COVID-19 effort.';
-const emailOfferHelpHref = `mailto:${constants.contactEmailAddress}?subject=${emailSubject}&body=${emailBody}`;
 
 export default function DonateCard() {
 	return (
@@ -52,8 +45,7 @@ export default function DonateCard() {
 				<Button
 					variant="contained"
 					color="primary"
-					href={emailOfferHelpHref}
-					startIcon={<MailIcon />}>
+					href="/covid-19/join-the-effort">
 					Join the Effort
 				</Button>
 				<Button
