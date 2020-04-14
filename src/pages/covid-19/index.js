@@ -25,32 +25,34 @@ export default function Covid19Page() {
 							printing various PPE to support the fight against COVID-19."
 				/>
 			</Helmet>
-			<Container component="section" className={Covid19PageStyles.hero}>
-				<Grid
-					container
-					justify="center"
-					alignItems="flex-start"
-					spacing={5}>
+			<section className={Covid19PageStyles.hero}>
+				<Container>
 					<Grid
-						item
-						className={Covid19PageStyles.heroContent}
-						xs={12}>
-						<Typography component="h1" variant="h2">
-							COVID-19 Effort
-						</Typography>
-						<Typography component="p" variant="subtitle1">
-							A group of volunteers from Kitsap Makers is 3D
-							printing various PPE.
-						</Typography>
+						container
+						justify="center"
+						alignItems="flex-start"
+						spacing={5}>
+						<Grid
+							item
+							className={Covid19PageStyles.heroContent}
+							xs={12}>
+							<Typography component="h1" variant="h2">
+								COVID-19 Effort
+							</Typography>
+							<Typography component="p" variant="subtitle1">
+								A group of volunteers from Kitsap Makers is 3D
+								printing various PPE.
+							</Typography>
+						</Grid>
+						<Grid item xs={12} sm={6}>
+							<NeedPPECard />
+						</Grid>
+						<Grid item xs={12} sm={6}>
+							<DonateCard />
+						</Grid>
 					</Grid>
-					<Grid item xs={12} sm={6}>
-						<NeedPPECard />
-					</Grid>
-					<Grid item xs={12} sm={6}>
-						<DonateCard />
-					</Grid>
-				</Grid>
-			</Container>
+				</Container>
+			</section>
 			<OurGoalSection />
 			<OurNeedsSection />
 			<WhoWeAreSection />
