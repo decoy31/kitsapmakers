@@ -1,4 +1,7 @@
 .hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
 	background: rgb(245, 245, 245);
 	background: linear-gradient(
@@ -14,14 +17,11 @@
 	}
 }
 
-.hero > * {
-	height: 100%;
-}
-
 .heroContent {
 	margin-top: 1rem;
 	margin-bottom: 2rem;
 	text-align: center;
+	height: 100%;
 }
 
 @media (min-width: 600px) {
@@ -30,8 +30,7 @@
 	}
 }
 
-.heroContent h1,
-.heroContent h2 {
+.heroContent h1 {
 	margin-bottom: 1rem;
 }
 
@@ -40,10 +39,15 @@
 	padding-bottom: 3rem;
 }
 
+.gettingStartedHeaderContent {
+	text-align: center;
+}
+
 .donateSection {
 	background-color: rgb(245, 245, 245);
 	padding-top: 1rem;
 	padding-bottom: 1rem;
+	text-align: center;
 }
 
 @media (min-width: 600px) {
@@ -51,4 +55,8 @@
 		padding-top: 3rem;
 		padding-bottom: 3rem;
 	}
+}
+
+.donateSection h2 {
+	margin-bottom: 1rem;
 }
