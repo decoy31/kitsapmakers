@@ -29,10 +29,11 @@ export default function OurNeedsSection() {
 							trying to do our part to help our local community.
 							The makers who are participating in this effort from
 							both Navy and private sector backgrounds. The makers
-							are engineers, technologists, and varying other
-							fields. We also have folks in the group who are in
-							the local health care industry who are helping
-							distribute and consult on the various PPE.
+							are engineers, technologists, and from varying other
+							technical and engineering fields. We also have folks
+							in the group who are in the local health care
+							industry who are helping distribute and consult on
+							the various PPE.
 						</Typography>
 					</Grid>
 				</Grid>
