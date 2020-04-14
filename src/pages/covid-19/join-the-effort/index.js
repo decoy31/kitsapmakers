@@ -10,11 +10,18 @@ import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 
 // Icons
 import OpenInNewIcon from '@material-ui/icons/OpenInNew';
 import MoneyIcon from '@material-ui/icons/AttachMoney';
+
+// Images
+import StJoeERImage from './images/st-joseph-emergency-department.jpg';
+import BIFDImage from './images/bainbridge-island-fire-department.jpg';
+import JohnBroshearsImage from './images/john-broshears-making-face-shields.jpg';
+import MonkeyEarSaverImage from './images/monkey-ear-saver.jpg';
 
 // Styles
 import JoinTheEffortStyles from './index.module.css';
@@ -86,7 +93,13 @@ export default function JoinTheEffort() {
 								xs={12}
 								sm={6}>
 								<Card variant="outlined">
-									<CardHeader title="1. Contact Us"></CardHeader>
+									<CardHeader title="1. Contact Us" />
+									<CardMedia
+										component="img"
+										alt="St. Joseph Emergency Department staff"
+										height="300"
+										image={StJoeERImage}
+									/>
 									<CardContent>
 										We need to make sure those who are
 										participating in the team are making the
@@ -120,7 +133,13 @@ export default function JoinTheEffort() {
 							alignItems="flex-start">
 							<Grid item xs={12} sm={6}>
 								<Card variant="outlined">
-									<CardHeader title="2. Start Making"></CardHeader>
+									<CardHeader title="2. Start Making" />
+									<CardMedia
+										component="img"
+										alt="John Broshears (one of our makers) printing face shield brackets"
+										height="300"
+										image={JohnBroshearsImage}
+									/>
 									<CardContent>
 										After you have figured out what the team
 										and local community needs you to make,
@@ -147,7 +166,13 @@ export default function JoinTheEffort() {
 							alignItems="flex-start">
 							<Grid item xs={12} sm={6}>
 								<Card variant="outlined">
-									<CardHeader title="3. Reach Out to Your Community"></CardHeader>
+									<CardHeader title="3. Reach Out to Your Community" />
+									<CardMedia
+										component="img"
+										alt="Handing off face shields to Bainbridge Island Fire Department"
+										height="300"
+										image={BIFDImage}
+									/>
 									<CardContent>
 										Contact people, facilities, and
 										organizations who may need face shields
@@ -165,7 +190,13 @@ export default function JoinTheEffort() {
 							alignItems="flex-start">
 							<Grid item xs={12} sm={6}>
 								<Card variant="outlined">
-									<CardHeader title="4. Innovate"></CardHeader>
+									<CardHeader title="4. Innovate" />
+									<CardMedia
+										component="img"
+										alt="Ear saver for elastic straps on face masks shaped like a monkey"
+										height="300"
+										image={MonkeyEarSaverImage}
+									/>
 									<CardContent>
 										Help the team come up with new ways to
 										create and distribute personal
