@@ -25,22 +25,14 @@ export default function OurNeedsSection() {
 							Who We Are
 						</Typography>
 						<Typography component="p">
-							Joey Sim is a mechanical engineer based out of
-							Keyport, WA. It was his idea to start printing these
-							masks for medical staff and first responders.
-							Adrienne Landaal is an RN at St. Anthony Hospital in
-							Gig Harbor, WA. She is on the front lines helping
-							patients directly impacted by Coronavirus and
-							consulting on the project. If you're in Kitsap
-							County and want more resources and updates, check
-							out{' '}
-							<a
-								href="https://kitsappublichealth.org/"
-								target="_blank"
-								rel="noopener noreferrer">
-								Kitsap Public Health
-							</a>
-							.
+							We are a group of passionate community members
+							trying to do our part to help our local community.
+							The makers who are participating in this effort from
+							both Navy and private sector backgrounds. The makers
+							are engineers, technologists, and varying other
+							fields. We also have folks in the group who are in
+							the local health care industry who are helping
+							distribute and consult on the various PPE.
 						</Typography>
 					</Grid>
 				</Grid>
